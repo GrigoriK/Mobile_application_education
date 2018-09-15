@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_main"
+            android:icon="@drawable/ic_main_black_24dp"
+            android:title="@string/main_screne" />
+
+        <item
+            android:id="@+id/nav_courses"
+            android:icon="@drawable/ic_about_news"
+            android:title="@string/nav_books" />
+
+
+    </group>
+
+    <item android:title="@string/nav_subTitle">
+        <menu>
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_organisation"
+                android:title="@string/nav_subTitle_company" />
+            <item
+                android:id="@+id/nav_contakts"
+                android:icon="@drawable/ic_contakts"
+                android:title="@string/nav_subTitle_contakts" />
+        </menu>
+    </item>
+
+</menu>

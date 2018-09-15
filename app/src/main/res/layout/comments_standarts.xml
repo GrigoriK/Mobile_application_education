@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingStart="10dp"
+    android:layout_marginTop="10dp"
+    android:paddingRight="6dp"
+    android:paddingLeft="6dp"
+    android:paddingEnd="10dp">
+    <TextView
+        android:id="@+id/title_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="19sp"
+        />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_com"
+        layout_constraintTop_toBottomOf="@+id/search_theme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/title_infocom"
+        android:layout_marginTop="20dp"
+        android:descendantFocusability="blocksDescendants"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scroll" />
+</RelativeLayout>
